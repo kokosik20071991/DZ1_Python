@@ -1,3 +1,8 @@
-a=(input("Введите трехзначное число: "))
-sum=int(a[0])+int(a[1])+int(a[2])
-print(sum)
+a = input('Введите 3-х значное число: ')
+sum = 0
+if len(a) == 3:
+    for i in a:
+        sum += int(i)
+    print(sum)
+else:
+    print('Вы ввели не 3-х значное число')
